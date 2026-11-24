@@ -1,2 +1,8 @@
 .venv/
 __pycache__/
+cosign.key
+lab/.venv/
+lab/victim-venv/
+lab/**/__pycache__/
+lab/**/build/
+lab/**/*.egg-info/
