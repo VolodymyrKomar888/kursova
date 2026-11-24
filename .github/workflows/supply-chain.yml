@@ -63,7 +63,7 @@ jobs:
           severity-cutoff: high
           only-fixed: true
 
-      - uses: sigstore/cosign-installer@v4
+      - uses: sigstore/cosign-installer@v4.1.4
 
       - name: Sign image (keyless)
         env:
@@ -87,7 +87,7 @@ jobs:
       contents: read
       packages: read
     steps:
-      - uses: sigstore/cosign-installer@v4
+      - uses: sigstore/cosign-installer@v4.1.4
       - uses: docker/login-action@v3
         with:
           registry: ghcr.io
